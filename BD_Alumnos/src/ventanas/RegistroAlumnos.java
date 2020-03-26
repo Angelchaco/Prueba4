@@ -30,10 +30,8 @@ public class RegistroAlumnos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        txt_nombre = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txt_grupo = new javax.swing.JTextField();
+        txt_nombre = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -41,12 +39,21 @@ public class RegistroAlumnos extends javax.swing.JFrame {
         txt_buscar = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         label_status = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        txt_apellidos = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        txt_fechanac = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txt_curso = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txt_correo = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        txt_tel = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Nombre:");
-
-        jLabel2.setText("Grupo:");
+        jLabel2.setText("Nombres:");
 
         jButton1.setText("Registrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +76,7 @@ public class RegistroAlumnos extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Ingresa el código del alumno: ");
+        jLabel3.setText("Ingresa el código del maestro: ");
 
         jButton4.setText("Buscar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -80,55 +87,116 @@ public class RegistroAlumnos extends javax.swing.JFrame {
 
         label_status.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
+        jLabel4.setText("Ingreso de maestros:");
+
+        jLabel5.setText("Apellidos:");
+
+        jLabel6.setText("Fecha Nacimiento");
+
+        jLabel7.setText("Curso:");
+
+        jLabel8.setText("Correo:");
+
+        jLabel9.setText("Telefono:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel1)
-                        .addComponent(txt_nombre)
-                        .addComponent(jLabel2)
-                        .addComponent(txt_grupo)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jButton1)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton2)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton3))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel3)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txt_buscar)))
-                    .addComponent(jButton4)
-                    .addComponent(label_status))
-                .addContainerGap(133, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(label_status))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(48, 48, 48)
+                                .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel6))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txt_fechanac, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txt_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel9))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(48, 48, 48)
+                                        .addComponent(txt_curso, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txt_tel, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txt_correo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(188, 188, 188)
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txt_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButton4)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(84, 84, 84)
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton3)))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txt_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel4)
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txt_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_fechanac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(txt_curso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(txt_tel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addGap(35, 35, 35)
+                .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(txt_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addGap(14, 14, 14)
                 .addComponent(label_status)
                 .addContainerGap())
         );
@@ -140,15 +208,23 @@ public class RegistroAlumnos extends javax.swing.JFrame {
         //Codigo que permite insertar registros en al base de datos
         try{
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_ins", "root", "");
-            PreparedStatement pst = cn.prepareStatement("insert into alumnos values(1,2,3)");
+            PreparedStatement pst = cn.prepareStatement("insert into maestros values(?,?,?)");
             
             pst.setString(1, "0");
             pst.setString(2, txt_nombre.getText().trim());
-            pst.setString(3, txt_grupo.getText().trim());
+            pst.setString(3, txt_apellidos.getText().trim());
+            pst.setString(4, txt_fechanac.getText().trim());
+            pst.setString(5, txt_curso.getText().trim());
+            pst.setString(6, txt_correo.getText().trim());
+            pst.setString(7, txt_tel.getText().trim());
             pst.executeUpdate();
             
             txt_nombre.setText("");
-            txt_grupo.setText("");
+            txt_apellidos.setText("");
+            txt_fechanac.setText("");
+            txt_curso.setText("");
+            txt_correo.setText("");
+            txt_tel.setText("");
             label_status.setText("Registro exitoso.");
         }catch (Exception e){
             
@@ -160,16 +236,20 @@ public class RegistroAlumnos extends javax.swing.JFrame {
         //Codigo que permite consultar registros en la base de datos
         try{
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_ins", "root", "");
-            PreparedStatement pst = cn.prepareStatement("select * from alumnos where ID = 1");
+            PreparedStatement pst = cn.prepareStatement("select * from maestros where ID = ?");
             pst.setString(1, txt_buscar.getText().trim());
             
             ResultSet rs = pst.executeQuery();
             
             if(rs.next()){
-                txt_nombre.setText(rs.getString("NombreAlumno"));
-                txt_grupo.setText(rs.getString("Grupo"));
+                txt_nombre.setText(rs.getString("NombreMaestro"));
+                txt_apellidos.setText(rs.getString("ApellidoMaestro"));
+                txt_fechanac.setText(rs.getString("Fecnac"));
+                txt_curso.setText(rs.getString("curso"));
+                txt_correo.setText(rs.getString("correo"));
+                txt_tel.setText(rs.getString("tel"));
             } else {
-                JOptionPane.showMessageDialog(null, "Alumno no registrado.");
+                JOptionPane.showMessageDialog(null, "Maestro no registrado.");
             }
             
         }catch (Exception e){
@@ -184,10 +264,14 @@ public class RegistroAlumnos extends javax.swing.JFrame {
             String ID = txt_buscar.getText().trim();
             
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_ins", "root", "");
-            PreparedStatement pst = cn.prepareStatement("update alumnos set NombreAlumno = 1, Grupo = 2 where ID = " + ID);
+            PreparedStatement pst = cn.prepareStatement("update maestros set NombreMaestro = ?, ApellidoMaestro = ?, Fecnac = ?, curso = ?, correo = ?, tel = ? where ID = " + ID);
             
             pst.setString(1, txt_nombre.getText().trim());
-            pst.setString(2, txt_grupo.getText().trim());
+            pst.setString(2, txt_apellidos.getText().trim());
+            pst.setString(3, txt_fechanac.getText().trim());
+            pst.setString(4, txt_curso.getText().trim());
+            pst.setString(5, txt_correo.getText().trim());
+            pst.setString(6, txt_tel.getText().trim());
             pst.executeUpdate();
             
             label_status.setText("Modificación exitosa.");
@@ -201,13 +285,17 @@ public class RegistroAlumnos extends javax.swing.JFrame {
         //Codigo que permite borrar registros en la base de datos
         try {
              Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_ins", "root", "");
-            PreparedStatement pst = cn.prepareStatement("delete from alumnos where ID = 1");
+            PreparedStatement pst = cn.prepareStatement("delete from maestros where ID = ?");
             
             pst.setString(1, txt_buscar.getText().trim());
             pst.executeUpdate();
             
             txt_nombre.setText("");
-            txt_grupo.setText("");
+            txt_apellidos.setText("");
+            txt_fechanac.setText("");
+            txt_curso.setText("");
+            txt_correo.setText("");
+            txt_tel.setText("");
             txt_buscar.setText("");
             
             label_status.setText("Registro eliminado.");
@@ -257,12 +345,21 @@ public class RegistroAlumnos extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel label_status;
+    private javax.swing.JTextField txt_apellidos;
     private javax.swing.JTextField txt_buscar;
-    private javax.swing.JTextField txt_grupo;
+    private javax.swing.JTextField txt_correo;
+    private javax.swing.JTextField txt_curso;
+    private javax.swing.JTextField txt_fechanac;
     private javax.swing.JTextField txt_nombre;
+    private javax.swing.JTextField txt_tel;
     // End of variables declaration//GEN-END:variables
 }
